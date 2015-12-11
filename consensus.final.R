@@ -1,7 +1,5 @@
 consensus.final <-
 function(data){
-# author: Antoine Tixier
-# last updated: 7.15.2015
 
 output=list()
 for (i in 1:nrow(data)){
