@@ -1,4 +1,7 @@
 cores_dec = function(g, weighted){
+# library(igraph)
+# source("heapify.R")
+
 # unweighted or weighted k-core decomposition of an undirected and (optionally) edge-weighted graph
 
 # initialize list that will contain the core numbers
