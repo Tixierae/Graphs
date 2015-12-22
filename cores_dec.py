@@ -2,7 +2,7 @@ import heapq
 import igraph
 import copy
 
-__author__ = "antoine.tixier-1@colorado.edu"
+__author__ = "Antoine J.-P. Tixier"
 
 def core_dec(g, weighted = True):
     # unweighted or weighted k-core decomposition of a graph
