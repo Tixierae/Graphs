@@ -50,20 +50,7 @@ def core_dec(g, weighted = True):
     else:
         # k-core decomposition for unweighted graphs
         # based on Batagelj and Zaversnik's (2002) algorithm #1
-    
-        # compute vertice degrees and order vertices in increasing order of their degrees
-        degrees_g = sorted(zip(gg.vs["name"],gg.strength()), key=operator.itemgetter(1))
-        
-        for i, degrees_g_temp in enumerate(degrees_g):
-            vertice = degrees_g_temp[0]
-            cores_g[vertice] =  degrees_g_temp[1]
-            neighbors_vertice = gg.vs[gg.neighbors(vertice)]["name"]
-            for j, neighbor in enumerate(neighbors_vertice):
-                index_neighbor = [temp_tuple[0] for temp_tuple in degrees_g].index(neighbor)
-                if degrees_g[index_neighbor][1] > degrees_g[i][1]:
-                    degrees_g[index_neighbor] = (neighbor, degrees_g[index_neighbor][1] - 1)
-                    # reorder vertices in increasing order of their degrees
-                    degrees_g = sorted(degrees_g, key=operator.itemgetter(1))
+         cores_g = dict(zip(gg.vs["name"],g.coreness()))
     
     # sort vertices by decreasing core number
     sorted_cores_g = sorted(cores_g.items(), key=operator.itemgetter(1), reverse=True)
