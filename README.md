@@ -13,9 +13,12 @@ g$layout=layout.fruchterman.reingold(g,weights=E(g)$weight)`
 See example [here](http://stackoverflow.com/questions/16390221/how-to-make-grouped-layout-in-igraph/29098951#29098951)
 
 ### cores_dec()
-This function performs unweighted or weighted k-core decomposition of an undirected and (optionally) edge-weighted graph.
+This function performs unweighted or weighted k-core decomposition of an undirected and (optionally) edge-weighted graph. The reference is [Batagelj and Zaveršnik (2002)](http://arxiv.org/pdf/cs/0202039.pdf).
 
 ## Examples
 This file contains examples for the abovelisted functions.
 
 # Python
+
+### cores_dec()
+This function performs unweighted or weighted k-core decomposition of an undirected and (optionally) edge-weighted graph. The reference is [Batagelj and Zaveršnik (2002)](http://arxiv.org/pdf/cs/0202039.pdf).
