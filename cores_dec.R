@@ -9,7 +9,7 @@ cores_dec = function(g, weighted){
   # - note that overall (in terms of F1 score), weighted k-core performs better
   
   # initialize list that will contain the core numbers
-  cores_g = 1:length(v_names)*0
+  cores_g = 1:length(V(g)$name)*0
   names(cores_g) = V(g)$name
   
   if (weighted == TRUE){
