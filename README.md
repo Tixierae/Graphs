@@ -10,7 +10,7 @@ The user simply has to apply the function over the rows of the matrix of edges o
 `E(g)$weight=apply(get.edgelist(g),1,weight.community,membership,10,1)
 g$layout=layout.fruchterman.reingold(g,weights=E(g)$weight)`
 
-See example [here](http://stackoverflow.com/questions/16390221/how-to-make-grouped-layout-in-igraph/29098951#29098951)
+See example [here](http://stackoverflow.com/questions/16390221/how-to-make-grouped-layout-in-igraph/29098951#29098951).
 
 ### cores_dec()
 This function performs unweighted or weighted k-core decomposition of an undirected and (optionally) edge-weighted graph. The reference is [Batagelj and Zaveršnik (2002)](http://arxiv.org/pdf/cs/0202039.pdf).
